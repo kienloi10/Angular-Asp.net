@@ -54,7 +54,7 @@ using WebApplication2.Models;
             WriteLiteral("<!doctype html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(35, 237, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eeb95fd9cc244277839fd56f3df37e45", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75802dfd1e6746efa43384d1155d9ea4", async() => {
                 BeginContext(41, 224, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <title>MyFirstWebsite</title>\r\n    <base href=\"/\">\r\n\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\r\n");
                 EndContext();
@@ -74,7 +74,7 @@ using WebApplication2.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(274, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73ff50a1c11545ec9e8f1f7c23f98433", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bba0df40571440094233a4bde3245f4", async() => {
                 BeginContext(280, 39, true);
                 WriteLiteral("\r\n    <app-root>Loading...</app-root>\r\n");
                 EndContext();
