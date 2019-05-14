@@ -137,11 +137,17 @@ namespace WebApplication2.Migrations
 
                     b.Property<int>("Amount");
 
+                    b.Property<string>("CreatedById");
+
+                    b.Property<string>("Img");
+
                     b.Property<string>("NameProduct");
 
                     b.Property<int>("Qty");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
 
                     b.ToTable("Product");
                 });
@@ -240,6 +246,13 @@ namespace WebApplication2.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApplication2.Model.Product", b =>
+                {
+                    b.HasOne("WebApplication2.Models.ApplicationUser", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,5 +11,6 @@ namespace WebApplication2.ViewModel
         public string NameProduct { get; set; }
         public int Qty { get; set; }
         public int Amount { get; set; }
+        public string Img { get; set; }
     }
 }

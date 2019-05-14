@@ -31,6 +31,7 @@ namespace WebApplication2.Controllers
                 NameProduct = x.NameProduct,
                 Qty = x.Qty,
                 Amount = x.Amount,
+                Img = x.Img
             });
             return rs;
         }
@@ -47,7 +48,8 @@ namespace WebApplication2.Controllers
                     Id = res.Id,
                     NameProduct = res.NameProduct,
                     Qty = res.Qty,
-                    Amount = res.Amount
+                    Amount = res.Amount,
+                    Img = res.Img
                 };
                 return rs;
             }
