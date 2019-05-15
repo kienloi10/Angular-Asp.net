@@ -26,6 +26,8 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-t
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\product\product-list.component.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\login\login.component.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\login\login.component.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\account\account.component.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\account\account.component.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\app.module.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\app.module.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\environments\environment.js
@@ -40,6 +42,10 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-t
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\app.component.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\myfilter.pipe.spec.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\myfilter.pipe.spec.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\Object\Account.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\Object\Account.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\account\account.component.spec.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\account\account.component.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\counter\counter.component.spec.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\counter\counter.component.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\login\login.component.spec.js
@@ -48,5 +54,9 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-t
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\product\product.component.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\product\product-edit\product-edit.component.spec.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\product\product-edit\product-edit.component.spec.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\account.service.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\account.service.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\account.service.spec.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\account.service.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\environments\environment.prod.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\environments\environment.prod.js.map

@@ -30,7 +30,6 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.pdb
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.csproj.CopyComplete
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
-C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.csprojAssemblyReference.cache
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\AccessDenied.g.cshtml.cs
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\ConfirmEmail.g.cshtml.cs
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\ExternalLogin.g.cshtml.cs
@@ -45,3 +44,4 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\SignedOut.g.cshtml.cs
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\_ViewImports.g.cshtml.cs
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\Razor\Views\Account\_ViewStart.g.cshtml.cs
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.1\WebApplication2.csprojAssemblyReference.cache
