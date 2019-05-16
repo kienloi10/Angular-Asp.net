@@ -8,5 +8,6 @@ namespace WebApplication2.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public bool IsActived { get; set; }
     }
 }

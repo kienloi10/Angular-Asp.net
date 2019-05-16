@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication2.Data;
 using WebApplication2.Models;
+using WebApplication2.Service;
 
 namespace WebApplication2
 {
@@ -40,6 +42,10 @@ namespace WebApplication2
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddDefaultIdentity<IdentityUser>(config =>
+            {
+                config.SignIn.RequireConfirmedEmail = true;
+            });
             services.AddDbContext<MyContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("MyContext")));
             services
@@ -57,7 +63,8 @@ namespace WebApplication2
               })
               .AddEntityFrameworkStores<MyContext>()
               .AddDefaultTokenProviders();
-
+            services.AddTransient<IEmailSender, EmailSender>();
+           
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

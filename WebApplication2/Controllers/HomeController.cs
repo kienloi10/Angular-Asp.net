@@ -8,7 +8,7 @@ using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {
@@ -18,7 +18,6 @@ namespace WebApplication2.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
