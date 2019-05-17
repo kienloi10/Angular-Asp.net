@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -13,6 +15,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using WebApplication2.Data;
 using WebApplication2.Models;
 using WebApplication2.Service;
@@ -31,6 +34,8 @@ namespace WebApplication2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Inject AppSettings
+            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -42,10 +47,10 @@ namespace WebApplication2
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            services.AddDefaultIdentity<IdentityUser>(config =>
-            {
-                config.SignIn.RequireConfirmedEmail = true;
-            });
+            //services.AddDefaultIdentity<IdentityUser>(config =>
+            //{
+            //    config.SignIn.RequireConfirmedEmail = true;
+            //});
             services.AddDbContext<MyContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("MyContext")));
             services
@@ -64,7 +69,28 @@ namespace WebApplication2
               .AddEntityFrameworkStores<MyContext>()
               .AddDefaultTokenProviders();
             services.AddTransient<IEmailSender, EmailSender>();
-           
+
+
+            //Jwt Authentication
+            var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret"].ToString());
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x => { 
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = false;
+                x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+        
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -84,6 +110,16 @@ namespace WebApplication2
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            //JWT
+            app.UseCors(builder =>
+            builder.WithOrigins(Configuration["ApplicationSettings:Client_URL"].ToString())
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+
+            );
+
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
                 {

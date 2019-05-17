@@ -34,6 +34,8 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-t
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\pipe\search-product.pipe.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\pipe\phone.pipe.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\pipe\phone.pipe.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\table\table.component.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\table\table.component.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\app.module.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\app.module.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\environments\environment.js
@@ -62,5 +64,11 @@ C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-t
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\product\product-edit\product-edit.component.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\account.service.spec.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\account.service.spec.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\product.service.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\product.service.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\product.service.spec.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\service\product.service.spec.js.map
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\table\table.component.spec.js
+C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\app\table\table.component.spec.js.map
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\environments\environment.prod.js
 C:\Users\ADMIN\source\repos\WebApplication2\WebApplication2\ClientApp\dist\out-tsc\src\environments\environment.prod.js.map
